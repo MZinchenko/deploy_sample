@@ -14,6 +14,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 11
+          distribution: 'adopt'
       - name: Configure git
         run: |
           git config --global committer.email "noreply@github.com"
