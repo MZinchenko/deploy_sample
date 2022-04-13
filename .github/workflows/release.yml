@@ -1,4 +1,4 @@
-name: ci build and pack
+name: Release into Docker
 
 on:
   push:
