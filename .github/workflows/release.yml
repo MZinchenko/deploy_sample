@@ -15,6 +15,10 @@ jobs:
         with:
           java-version: 11
           distribution: 'adopt'
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@v4.3
+        with:
+          maven-version: 3.8.2
       - name: Configure git
         run: |
           git config --global committer.email "noreply@github.com"
