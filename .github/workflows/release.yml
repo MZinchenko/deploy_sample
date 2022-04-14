@@ -15,6 +15,7 @@ jobs:
         with:
           java-version: 11
           distribution: 'adopt'
+          cache: maven
       - name: Set up Maven
         uses: stCarolas/setup-maven@v4.3
         with:
