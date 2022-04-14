@@ -3,19 +3,19 @@ package ru.otus.controller;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IndexControllerTest {
-    @DisplayName( "Есть страница ads" )
+    @DisplayName("Есть страница ads")
     @Test
-    public void testAds(){
+    public void testAds() {
         IndexController indexController = new IndexController();
-        assertEquals( "ads", indexController.adsPage() );
+        assertEquals("ads", indexController.adsPage());
     }
 
-    @DisplayName( "Попытки должно быть 3" )
+    @DisplayName("Попытки должно быть 7")
     @Test
-    public void testRetryCount(){
+    public void testRetryCount() {
         IndexController indexController = new IndexController();
         assertEquals( 7, indexController.retryCount() );
     }
